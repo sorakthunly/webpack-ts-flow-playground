@@ -1,12 +1,12 @@
 /* flow */
 import React, { Component, Fragment } from 'react';
 
-import Typescript from './Typescript.tsx';
+import Typescript from './Typescript';
 
 import { prefixMrTitleFlow } from './flowFunctions';
 import { TestFlowType } from './flowTypes';
-import { prefixMrTitleTypescript } from './typescriptFunctions.ts';
-import { TestTypescriptType } from './typescriptTypes.ts';
+import { prefixMrTitleTypescript } from './typescriptFunctions';
+import { TestTypescriptType } from './typescriptTypes';
 
 export class App extends Component {
     render() {
@@ -21,7 +21,7 @@ export class App extends Component {
         console.log(dataFlow.firstName);
         console.log(dataFlow.name);
 
-        // Flow type-checker not honouring Typescript type (expected I guess?)
+        // Flow type-checker not honouring Typescript type (expected)
         const dataTypescript: TestTypescriptType = {
             firstName: 'John Typescript',
             name: 'John Lee Typescript'
